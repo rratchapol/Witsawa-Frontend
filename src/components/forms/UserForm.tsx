@@ -53,16 +53,16 @@ export default function UserForm({ onSuccess, initialData }: UserFormProps) {
       setLoading(true);
       setIsSaveModalOpen(false);
       
-      let successTitle = "";
+      // let successTitle = "";
       let successDescription = "";
 
       if (initialData && initialData.id) {
         await updateUser(initialData.id, formValues);
-        successTitle = "User Updated";
+        // successTitle = "User Updated";
         successDescription = "Your changes have been saved successfully.";
       } else {
         await createUser(formValues);
-        successTitle = "User Created";
+        // successTitle = "User Created";
         successDescription = "New user has been created successfully.";
       }
 
