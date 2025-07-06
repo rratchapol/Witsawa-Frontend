@@ -71,7 +71,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser(res.user);
                 
         setTimeout(() => {
-          window.location.href = "/users";
+          window.location.href = "/";
         }, 1000);
         
       } else {
@@ -82,7 +82,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       console.error("Login error:", error);
       const errorMessage = error?.response?.data?.message || "เกิดข้อผิดพลาดในการเข้าสู่ระบบ";
       message.error(errorMessage);
-      
+
     }
   };
 
