@@ -1,11 +1,9 @@
 // services/axiosInstance.ts
 import axios from 'axios';
-// import environment from "@/environment/environment";
 
 
 const axiosInstance = axios.create({
-  // baseURL: environment.BaseUrl,
-  baseURL : "https://witsawa-backend-production.up.railway.app/", // Replace with your actual base URL
+  baseURL : "https://witsawa-backend-production.up.railway.app/api/", 
   // withCredentials: true,
     headers: {
     'Content-Type': 'application/json', 
